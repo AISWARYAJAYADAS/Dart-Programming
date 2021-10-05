@@ -1,0 +1,35 @@
+....................................................................................................................................................................................
+Program 1 
+....................................................................................................................................................................................
+
+import 'dart:io';
+
+void main(){
+  print('Enter the number:');
+  int number=int.parse(stdin.readLineSync().toString());
+  if(number.isEven){
+    print('$number is an Even number');
+  }else if(number.isOdd){
+    print('$number is an Odd number');
+  }
+}
+
+....................................................................................................................................................................................
+Program 2 
+....................................................................................................................................................................................
+
+import 'dart:io';
+
+void main(){
+  print('Enter the String:');
+  var s=stdin.readLineSync().toString();
+  //print(new String.fromCharCodes(s.runes.toList().reversed));
+  var r=new String.fromCharCodes(s.runes.toList().reversed);
+  if(s==r){
+    print('$s is palindrome');
+  }
+  else{
+    print('$s is not palindrome');
+  }
+}
+
