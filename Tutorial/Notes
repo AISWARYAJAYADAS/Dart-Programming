@@ -20,3 +20,79 @@ void main()
 Output :
 --------
 My name is Peter My roll number is 24
+
+.................................................................................................................................................................................
+Dart Data Types
+.................................................................................................................................................................................
+
+Dart supports the following built-in Data types.
+
+Number
+Strings
+Boolean
+Lists
+Maps
+Runes
+Symbols
+
+
+Dart Number
+-----------
+The Darts Number is used to store the numeric values. The number can be two types - integer and double.
+int marks = 80;
+double pi = 3.14;
+
+
+Dart Strings
+------------
+A string is the sequence of the character. If we store the data like - name, address, special character, etc. It is signified by using either single quotes or double quotes. A Dart string is a sequence of UTF-16 code units.
+var msg = "Hi";
+
+Dart Boolean
+-------------
+The Boolean type represents the two values - true and false. The bool keyword uses to denote Boolean Type. The numeric values 1 and 0 cannot be used to represent the true or false value.
+bool isValid = true;
+
+
+Dart Lists
+------------
+In Dart, The list is a collection of the ordered objects (value). The concept of list is similar to an array. An array is defined as a collection of the multiple elements in a single variable. The elements in the list are separated by the comma enclosed in the square bracket[]. The sample list is given below.
+var list = [1,2,3]
+
+Dart Maps
+----------
+The maps type is used to store values in key-value pairs. Each key is associated with its value. The key and value can be any type. In Map, the key must be unique, but a value can occur multiple times. The Map is defined by using curly braces ({}), and comma separates each pair.
+var student = {'name': 'Joseph',  'age':25, 'Branch': 'Computer Science'}  
+
+
+Dart Runes
+-----------
+As we know that, the strings are the sequence of Unicode UTF-16 code units. Unicode is a technique which is used to describe a unique numeric value for each digit, letter, and symbol. Since Dart Runes are the special string of Unicode UTF-32 units. It is used to represent the special syntax.
+
+For example - The special heart character ♥ is equivalent to Unicode code \u2665, where \u means Unicode, and the numbers are hexadecimal integer. If the hex value is less or greater than 4 digits, it places in a curly bracket ({}). For example - An emoji 😀 is represented as \u{1f600}. The example is given below.
+
+Example -
+
+void main(){  
+    var heart_symbol = '\u2665';  
+    var laugh_symbol = '\u{1f600}';  
+    print(heart_symbol);  
+    print(laugh_symbol);  
+}  
+
+
+Output:
+
+♥
+😀
+
+
+
+
+
+
+
+
+
+
+
