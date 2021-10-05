@@ -3,9 +3,8 @@ Dart Basic
 
 The print() function is used to print output on the console, and $expression is used for the string interpolation. Below is an example.
 
-Example :
----------
 
+Example -
 void main()  
 {  
     var name = "Peter";  
@@ -14,8 +13,7 @@ void main()
 }  
 
 
-Output :
---------
+Output -
 My name is Peter My roll number is 24
 
 .................................................................................................................................................................................
