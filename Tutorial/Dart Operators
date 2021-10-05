@@ -1,0 +1,149 @@
+Types of Operators
+==================
+Dart supports the following types of operators.
+
+.................................................................................................................................................................................
+Arithmetic Operators
+.................................................................................................................................................................................
+
+Example -
+
+void main(){  
+  print("Example of Assignment operators");  
+  var n1 = 10;  
+  var n2 = 5;  
+    
+  print("n1+n2 = ${n1+n2}");  
+  print("n1-n2 = ${n1-n2}");  
+  print("n1*n2 = ${n1*n2}");  
+  print("n1/=n2 = ${n1/n2}");   
+  print("n1%n2 = ${n1%n2}");     
+}  
+
+Output:
+
+Example of Arithmetic operators 
+n1+n2 = 15 
+n1-n2 = 5 
+n1*n2 = 50 
+n1/=n2 = 2 
+n1%n2 = 0
+
+Dart Unary Operators (post and pre)
+-------------------------------------
+
+The unary operators can be used in two ways - postfix and prefix. If ++ is used as a postfix(like x++), it returns the value of operand first then increments the value of x. If -- is used as a prefix(like ++x), it increases the value of x.
+
+Sr.	Operator Name	Description	Example
+1.	++(Prefix)	It increment the value of operand.	++x
+2.	++(Postfix)	It returns the actual value of operand before increment.	x++
+3.	--(Prefix)	It decrement the value of the operand.	--x
+4.	--(Postfix)	It returns the actual value of operand before decrement.	x--
+
+Example -
+
+void main() {   
+   var x = 30;   
+   print(x++);                  //The postfix value  
+     
+var y = 25;  
+print(++y);                 //The prefix value,  
+         
+var z = 10;  
+print(--z);                  //The prefix value  
+  
+var u = 12;                                           
+   print(u--);    }           //The postfix value  
+Output:
+
+30
+26
+9
+12
+
+................................................................................................................................................................................
+Assignment Operator
+................................................................................................................................................................................
+Assignment operators are used to assigning value to the variables.
+
+Example -
+
+void main(){  
+ print("Example of Assignment operators");  
+    
+  var n1 = 10;  
+  var n2 = 5;  
+    
+  n1+=n2;  
+  print("n1+=n2 = ${n1}");  
+    
+  n1-=n2;  
+  print("n1-=n2 = ${n1}");  
+    
+  n1*=n2;  
+  print("n1*=n2 = ${n1}");  
+    
+  n1~/=n2;  
+  print("n1~/=n2 = ${n1}");  
+  n1%=n2;  
+  print("n1%=n2 = ${n1}");    
+}  
+Output:
+
+Example of Assignment operators 
+n1+=n2 = 15 
+n1-=n2 = 10 
+n1*=n2 = 50 
+n1~/=n2 = 10 
+n1%=n2 = 0 
+
+.................................................................................................................................................................................
+Relational Operator
+................................................................................................................................................................................
+Relational operators or Comparison operators are used to making a comparison between two expressions and operands. The comparison of two expressions returns the Boolean true and false.
+
+Sr.	Operator	Description
+1.	>(greater than)	a>b will return TRUE.
+2.	<(less than)	a<b will return FALSE.
+3.	>=(greater than or equal to)	a>=b will return TRUE.
+4.	<=(less than or equal to)	a<=b will return FALSE.
+5.	==(is equal to)	a==b will return FALSE.
+6.	!=(not equal to)	a!=b will return TRUE.
+
+Example -
+
+void main() {   
+var a = 30;  
+var b = 20;  
+  
+print("The example of Relational Operator");  
+  
+var res = a>b;  
+print("a is greater than b: "+res. toString());  // We will learn the toString in next tutorial  
+  
+var res0 = a<b;  
+print("a is less than b: "+res0. toString());  
+  
+var res1 = a>=b;  
+print("a is greater than or equal to b: "+res1. toString());  
+  
+var res2 = a<=b;  
+print("a is less than and equal to b: "+res2. toString());  
+  
+var res3 = a!= b;  
+print("a is not equal to  b: "+res3. toString());  
+  
+var res4 = a==b;  
+print("a is  equal to  b: "+res4. toString());  
+}  
+
+
+Output:
+
+The example of Relational Operator
+a is greater than b: true
+a is less than b: false
+a is greater than or equal to b: true
+a is less than and equal to b: false
+a is not equal to  b: true
+a is  equal to  b: false
